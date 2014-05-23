@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<title>RepoNet Authentication</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<style>
+		body 		{ padding-top:80px; word-wrap:break-word; }
+	</style>
+</head>
+<body>
+<div class="container">
+
+	<div class="page-header text-center">
+		<h1>Dashboard</h1>
+		<a href="/logout" class="btn btn-default btn-sm">Logout</a>
+	</div>
+
+	<div class="row">
+
+		<!-- LOCAL INFORMATION -->
+		<div class="col-sm-6">
+			<!-- <div class="well"> -->
+				<h3>Options:</h3>
+				<p>
+					<a href="/order"><strong>Orders</strong></a><br>
+					<a href="/reports"><strong>Reports</strong><br>
+					<a href="/inventory"><strong>Inventory</strong><br>
+					<a href="/zones"><strong>Zones</strong><br>
+				</p>
+					<!-- <p>
+						<strong>id</strong>: <%= user._id %><br>
+						<strong>email</strong>: <%= user.local.email %><br>
+						<strong>password</strong>: <%= user.local.password %>
+					</p> -->
+
+			<!-- </div> -->
+		</div>
+
+	</div>
+
+</div>
+</body>
+</html>

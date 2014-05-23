@@ -1,0 +1,21 @@
+TODO:
+
+- Create bank interface / forms to add orders to the database
+  . Lender Profile
+  . Lender Dashboard
+  . Order Status
+  . Place order
+  . Update Order
+  . Cancel Order
+- Create pages for repo company interface
+  . Profile *
+  . Dashboard *
+  . Order *
+  . Reports *
+  . Zones *
+- Integrate Map into corresponding pages
+- Place pin on map for each device related to an account
+- Assign users to an account
+- Push events to device
+- allow routing based on events
+-
