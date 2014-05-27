@@ -1,3 +1,6 @@
+/*jslint node: true es5: true nomen: true*/
+"use strict";
+
 var express = require('express'),
     app = express(),
     port = process.env.PORT || 8080,
@@ -9,23 +12,23 @@ var configDB = require('./config/database.js');
 
 // connect to the DB
 mongoose.connect(configDB.url);
-require ('./config/passport')(passport);
+require('./config/passport')(passport);
 
-app.configure(function() {
-  // express
+app.configure(function () {
+    // express
+    app.use(express.logger('dev'));
+    app.use(express.cookieParser());
+    app.use(express.bodyParser());
+    app.use(express.static(__dirname + '/public'));
+  
+    // templating
+    app.set('view engine', 'ejs');
 
-  app.use(express.logger('dev'));
-  app.use(express.cookieParser());
-  app.use(express.bodyParser());
-  app.use(express.static(__dirname + '/public'));
-  // templating
-  app.set('view engine', 'ejs');
-
-  // passport
-  app.use(express.session({secret: 'rinchanrinchanrinchan'}));
-  app.use(passport.initialize());
-  app.use(passport.session());
-  app.use(flash());
+    // passport
+    app.use(express.session({secret: 'rinchanrinchanrinchan'}));
+    app.use(passport.initialize());
+    app.use(passport.session());
+    app.use(flash());
 
 });
 
