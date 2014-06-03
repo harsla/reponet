@@ -1,5 +1,7 @@
 TODO:
 
+*** re-write using angualr seed! ***
+
 - Create bank interface / forms to add orders to the database
   . Lender Profile
   . Lender Dashboard
@@ -18,3 +20,12 @@ TODO:
 - Assign users to an account
 - Push events to device
 - allow routing based on events
+
+
+Addy 
+Phone 
+SS
+DOB
+VIN 
+Make 
+Model
