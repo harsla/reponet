@@ -1,10 +1,5 @@
 'use strict';
 
-/* Controllers */
-// module.run(function($http) {
-// $http.defaults.headers.common.Authorization = 'Basic YmVlcDpib29w'
-// });
-
 angular.module('repoApp.controllers', [])
   .controller('HomeController', ['$scope',
     function($scope) {
